@@ -1,0 +1,604 @@
+@font-face {
+    font-family: Pike; src: url('assets/Pike.ttf');
+}
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family:Pike;
+}
+
+body {
+    margin-top:2175px;
+    background-image:url(assets/bg.jpg);
+    background-size:1450px;
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+nav {
+    position:absolute;
+    width:700px;
+    top:300px;
+    left:675px;
+    background: -webkit-linear-gradient(#fff, #ddd);
+    background: -o-linear-gradient(#fff, #ddd);
+    background: -moz-linear-gradient(#fff, #ddd);
+    background: linear-gradient(#fff, #ddd);
+    border-radius:20px;
+    box-shadow: 0 2px 4px black;
+    z-index:10;
+}
+
+nav > ul {
+    position:static;
+    width:100%;
+}
+
+nav > ul > li {
+    display:inline-block;
+    width:170px;
+}
+
+nav > ul > li > img {
+    width:100%;
+    -webkit-filter: grayscale(100%);
+}
+
+nav > ul > li > img:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+header {
+    position:absolute;
+    left:175px;
+    top:430px;
+    width:1100px;
+    z-index:10;
+}
+
+header > h1 {
+    text-align:center;
+    font-size:110px;
+    color:lightgreen;
+    text-shadow: 0px 2px 4px black;
+}
+
+#videoBox {
+    width:750px;
+    height:600px;
+    background-color:lightgreen;
+    position:absolute;
+    top:700px;
+    left:350px;
+    border-radius:20px;
+}
+
+#vid {
+    position:absolute;
+    top:50px;
+    margin:auto;
+    text-align:center;
+    width:750px;
+    height:500px;
+    border-radius:20px;
+}
+
+#welcome {
+    position:absolute;
+    top:1450px;
+    left:170px;
+    width:600px;
+}
+
+#welcome > h2 {
+    font-size:120px;
+    color:black;
+    text-shadow: 0px 2px 4px black;
+    text-align:center;
+}
+
+#text {
+    position:absolute;
+    top:1600px;
+    width:600px;
+    left:170px;
+    text-align:center;
+}
+
+#text > p {
+    font-size:30px;
+    text-shadow:0px 2px 4px black;
+}
+
+#description {
+    position:absolute;
+    top:1470px;
+    left:1050px;
+}
+
+#description > ul {
+    
+}
+
+#description > ul > li {
+    font-size:50px;
+}
+
+#shoe {
+    position:absolute;
+    width:350px;
+    height:350px;
+    overflow:hidden;
+    top:1760px;
+    left:100px;
+    border:2px solid black;
+    border-radius:10px;
+}
+
+#shoe > ul {
+    display:block;
+    width:2800px;
+    height:350px;
+    padding:0;
+    margin:0;
+}
+
+#shoe > ul > li {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    float:left;
+    width:350px;
+    height:350px;
+}
+
+#shoe > ul > li > img {
+    height:350px;
+    width:350px;
+}
+
+#hashtag {
+    position:absolute;
+    top:1750px;
+    left:470px;
+}
+
+#hashtag > h4 {
+    font-size:150px;
+    text-shadow: 0 2px 4px black;
+    color:black;
+}
+
+#socialMedia {
+    position:absolute;
+    top:1920px;
+    left:480px;
+}
+
+#socialMedia > ul > li {
+    display:inline-block;
+    margin-left:20px;
+}
+
+#socialMedia > ul > li > a > img {
+    border-radius:10px;
+}
+
+#blackPage {
+    position:fixed;
+    top:0px;
+    width: 100%;
+    height:100%;
+    background-color:black;
+    z-index:5;
+    opacity:.777;
+}
+
+#aboutPage {
+    left:175px;
+    right:175px;
+    position:absolute;
+    top:580px;
+    width:1100px;
+    height:1200px;
+    background-color:black;
+    color:white;
+    z-index:10;
+    border-radius:20px;
+    box-shadow: 0 2px 4px black;
+}
+
+#aboutPage > h3 {
+    font-size:4em;
+    font-family:Vivaldi;
+    padding:20px 40px;
+    text-align:center;
+}
+
+#aboutPage > p {
+    font-family:Courier;
+    font-size:1.5em;
+    font-weight:500;
+    line-height:35px;
+    padding:20px 70px;
+}
+
+#storePage {
+    left:175px;
+    right:175px;
+    position:absolute;
+    top:580px;
+    width:1100px;
+    height:1500px;
+    background-color:black;
+    z-index:10;
+    border-radius:20px;
+    box-shadow: 0 2px 4px black;
+}
+
+#aboutTitle {
+    
+}
+
+#contactPage {
+    left:175px;
+    right:175px;
+    position:absolute;
+    top:580px;
+    width:1100px;
+    height:1200px;
+    background-color:black;
+    color:white;
+    z-index:10;
+    border-radius:20px;
+    box-shadow: 0 2px 4px black;
+}
+
+#contactPage {
+    
+}
+
+#contactPage > h3 {
+    font-size:5em;;
+    text-align:center;
+}
+
+#socialLinks {
+    display:block;
+    width:310px;
+    height:90px;
+    margin:auto;
+}
+
+#socialLinks > ul {
+    width:400px
+    display:block;
+}
+
+#socialLinks > ul > li {
+    display:inline-block;
+    width:100px;
+    margin:0;
+    
+}
+
+#socialLinks > ul > li > a > img{
+    display:block;
+    border-radius:20px;
+    border:2px solid white;
+    margin:auto;
+}
+
+#contactPage > h4 {
+    margin-top:20px;
+    text-align:center;
+    font-size:3em;
+}
+
+#contactPage > p {
+    font-size:2em;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+@media only screen and (max-device-width: 750px){
+    
+    body {
+        background-image:none;
+        background: -webkit-linear-gradient(#fff, #808080);
+        background: -o-linear-gradient(#fff, #808080);
+        background: -moz-linear-gradient(#fff, #808080);
+        background: linear-gradient(#fff, #808080);
+        width:100%;
+        margin-top:10em;
+}
+
+    nav {
+        position:relative;
+        width:90%;
+        top:0;
+        left:15%;
+        background: none;
+        border-radius:0;
+        box-shadow: 0 0px 0px white;
+        margin:auto;
+}
+
+    nav > ul {
+        position:relative;
+        width:100%;
+        margin:auto;
+}
+
+    nav > ul > li {
+        display:inline-block;
+        width:100%;
+        margin:auto;
+}
+
+    nav > ul > li > img {
+        width:100%;
+        -webkit-filter: grayscale(0%);
+        margin:auto;
+}
+    
+    header {
+        display:none;
+}
+
+    #mobileHeader{
+        position:relative;
+        z-index:10;
+        width:90%;
+        display:block;
+        margin-left:20%;
+        text-align:center;
+        font-size:10em;
+        color:lightgreen;
+        text-shadow: 0px 10px 20px black;
+    }
+    
+    #z {
+        z-index:10;
+    }
+    
+    #videoBox {
+        position:relative;
+        width:125%;
+        height:750px;
+        background-color:lightgreen;
+        top:0px;
+        margin-left:5%;
+        left:0px;
+        border-radius:20px;
+}
+
+    #vid {
+        position:relative;
+        top:0px;
+        margin:auto;
+        text-align:center;
+        width:100%;
+        height:100%;
+        border-radius:20px;
+}
+    
+    #welcome {
+        display:none;
+}
+
+    #text {
+        margin-top:10%;
+        position:relative;
+        top:0px;
+        width:110%;
+        left:10%;
+        text-align:center;
+}
+
+    #text > p {
+        font-size:7em;
+        text-shadow:0px 4px 8px black;
+}
+    
+    #shoe {
+        display:block;
+        position:relative;
+        width:70em;
+        height:70em;
+        overflow:hidden;
+        top:0px;
+        left:0px;
+        border:2px solid black;
+        border-radius:10px;
+        margin-top:10%;
+        margin-left:10.5%;
+        border:2px solid black;
+        border-radius:10%;
+        
+}
+
+    #shoe > ul {
+        display:block;
+        width:560em;
+        height:70em;
+        padding:0;
+        margin:0;
+}
+
+    #shoe > ul > li {
+        padding:0;
+        margin:0;
+        list-style-type:none;
+        float:left;
+        width:70em;
+        height:70em;
+}
+
+    #shoe > ul > li > img {
+        width:70em;
+        height:70em;
+}
+    
+    #description {
+        display:none;
+}
+    
+    #hashtag {
+        position:relative;
+        top:0px;
+        width:100%;
+        left:0px;
+        right:0px;
+        display:block;
+        margin-left:10%;
+        margin-top:10%;
+}
+
+    #hashtag > h4 {
+        font-size:20em;
+        text-align:center;
+        text-shadow: 0 4px 8px black;
+        color:black;
+}
+
+    #socialMedia {
+        position:relative;
+        top:0px;
+        left:0px;
+        display:block;
+        width:100%;
+        margin-left:22%;
+        margin-bottom:15%;
+}
+
+    #socialMedia > ul > li {
+        display:inline-block;
+        margin-left:3em;
+}
+
+    #socialMedia > ul > li > a > img {
+        border-radius:10px;
+        width:12em;
+        height:auto;
+}
+    
+    #aboutPage {
+        position:relative;
+        left:0px;
+        right:0px;
+        top:0px;
+        width:130%;
+        height:auto;
+        background-color:black;
+        color:white;
+        z-index:10;
+        border-radius:20px;
+        box-shadow: 0 2px 4px black;
+        margin-top:-210em;
+}
+
+    #aboutPage > h3 {
+        position:relative;
+        font-size:10em;
+        font-family:Vivaldi;
+        padding:20px 40px;
+        text-align:center;
+}
+
+    #aboutPage > p {
+        text-align:center;
+        position:relative;
+        font-family:Courier;
+        font-size:5em;
+        font-weight:500;
+        line-height:1em;
+        padding:20px 70px;
+}
+    
+    #contactPage {
+        position:relative;
+        left:0em;
+        right:0em;
+        top:0em;
+        width:130%;
+        height:auto;
+        background-color:black;
+        color:white;
+        z-index:10;
+        border-radius:20px;
+        box-shadow: 0 2px 4px black;
+        margin-top:-210em;
+        padding-bottom:20%;
+}
+
+    #contactPage > h3 {
+        position:relative;
+        font-size:18em;;
+        text-align:center;
+}
+
+    #socialLinks {
+        position:relative;
+        display:block;
+        width:100%;
+        height:90px;
+        margin:auto;
+        margin-top:0em;
+}
+
+    #socialLinks > ul {
+        position:relative;
+        width:400px
+        display:block;
+}
+
+    #socialLinks > ul > li {
+        position:relative;
+        display:inline-block;
+        width:33%;
+        margin:0;
+    
+}
+
+    #socialLinks > ul > li > a > img{
+        position:relative;
+        display:block;
+        border-radius:20%;
+        border:1em solid white;
+        margin:auto;
+        width:15em;
+}
+
+    #contactPage > h4 {
+        position:relative;
+        margin-top:20%;
+        text-align:center;
+        font-size:10em;
+}
+
+    #contactPage > p {
+        position:relative;
+        font-size:7em;
+        text-align:center;
+        margin-bottom:00px;
+}
+    
+    #storePage {
+        left:0em;
+        right:0em;
+        position:relative;
+        top:0em;
+        width:130%;
+        height:auto;
+        background-color:black;
+        z-index:10;
+        border-radius:20px;
+        box-shadow: 0 2px 4px black;
+        margin-top:-210em;
+}
+    
+    
+    
+}
